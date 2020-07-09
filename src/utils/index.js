@@ -1,12 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom";
-
-import App from "./App";
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  rootElement
-);
+export function getClass(i) {
+  if (i % 5 === 0) {
+    return "big";
+  } else if (i % 6 === 0) {
+    return "wide";
+  }
+}
